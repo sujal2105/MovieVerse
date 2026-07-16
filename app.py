@@ -16,7 +16,23 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-
+st.html("""
+<style>
+@media (max-width: 640px) {
+    div[data-testid="stHorizontalBlock"] {
+        flex-direction: column !important;
+    }
+    div[data-testid="column"] {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+    }
+    div.stButton > button {
+        width: 100%;
+    }
+}
+</style>
+""")
 # ---------------------------------------------------------------------------
 # Custom styling (style.css)
 # ---------------------------------------------------------------------------

@@ -1,4 +1,6 @@
+
 html,
+
 body,
 .stApp {
 
@@ -512,4 +514,38 @@ body::after{
 ::-webkit-scrollbar-track{
 
     background:#0B1220;
+}
+/* Prevent horizontal scroll from ambient blobs / oversized text */
+html, body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 26px;
+        margin: 28px 0 16px;
+    }
+    .spotlight-info h2 {
+        font-size: 24px;
+    }
+    .spotlight-poster {
+        width: 120px;
+        min-width: 100px;
+    }
+    .spotlight {
+        padding: 18px;
+        gap: 16px;
+    }
+    .movie-card .card-title {
+        font-size: 16px;
+        min-height: 60px;
+        line-height: 22px;
+    }
 }
