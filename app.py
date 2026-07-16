@@ -4,7 +4,7 @@ import streamlit as st
 
 from recommender import movies, recommend
 from fetch import fetch_movie_details, API_KEY
-
+st.html("<style>@media(max-width:640px){.stColumns{display:block!important}div.stButton>button{width:100%}}</style>")
 
 # ---------------------------------------------------------------------------
 # Page configuration
